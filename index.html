@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica IlumiVitta - Saúde Integrada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- 1. Above the Fold -->
+        <header class="relative min-h-screen flex items-center justify-center overflow-hidden bg-brand-bg">
+            <nav class="absolute top-0 left-0 right-0 p-8 flex justify-between items-center z-10 max-w-7xl mx-auto">
+                <div class="text-xl font-medium tracking-[0.2em] text-gray-900 flex items-center">
+                    <span class="text-brand-primary">ILUMI</span>
+                    <span class="text-brand-secondary">VITTA</span>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+                <div class="hidden lg:flex gap-8 items-center text-[10px] tracking-[0.2em] font-medium text-gray-500 uppercase">
+                    <a href="#metodo" class="hover:text-brand-primary transition-colors">A Clínica</a>
+                    <a href="#beneficios" class="hover:text-brand-primary transition-colors">Especialidades</a>
+                    <a href="#procedimentos" class="hover:text-brand-primary transition-colors">Procedimentos</a>
+                    <a href="#equipe" class="hover:text-brand-primary transition-colors">Profissionais</a>
+                    <a href="#contato" class="hover:text-brand-primary transition-colors">Contato</a>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="fixed inset-0 bg-brand-bg z-50 flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-500 lg:hidden">
+                <button id="close-menu-btn" class="absolute top-8 right-8 text-brand-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+                <a href="#metodo" class="mobile-link text-xl font-serif text-brand-ink">A Clínica</a>
+                <a href="#especialidades" class="mobile-link text-xl font-serif text-brand-ink">Especialidades</a>
+                <a href="#procedimentos" class="mobile-link text-xl font-serif text-brand-ink">Procedimentos</a>
+                <a href="#equipe" class="mobile-link text-xl font-serif text-brand-ink">Profissionais</a>
+                <a href="#contato" class="mobile-link text-xl font-serif text-brand-ink">Contato</a>
+            </div>
+
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10 fade-in">
+                <span class="inline-block text-[10px] tracking-[0.3em] text-gray-500 uppercase mb-4 lg:mb-6">
+                    Saúde Integrada
+                </span>
+                <h1 class="text-4xl sm:text-6xl md:text-8xl font-normal text-brand-primary leading-tight mb-8 font-serif">
+                    Onde o cuidado<br />encontra a luz
+                </h1>
+                <p class="text-[10px] sm:text-xs lg:text-sm text-gray-600 mb-10 tracking-widest font-light max-w-lg mx-auto">
+                    Uma abordagem moderna para saúde, estética e bem-estar.
+                </p>
+                <a href="#contato" class="px-8 py-3 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-xs border border-brand-primary text-brand-primary hover:bg-brand-primary/5 w-full max-w-[280px] sm:w-auto">
+                    Agendar Consulta
+                </a>
+            </div>
+        </header>
+
+        <!-- 2. Leads Section / A Clínica -->
+        <section id="metodo" class="py-16 md:py-32 px-6 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-24 items-center">
+                <div class="fade-in">
+                    <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-4 block font-medium">A Clínica</span>
+                    <h2 class="text-4xl lg:text-5xl font-normal mb-8 leading-tight">Consulta Compartilhada</h2>
+                    <p class="text-lg text-brand-primary font-serif italic mb-6">
+                        Nosso carro chefe é a consulta compartilhada
+                    </p>
+                    <p class="text-gray-700 mb-8 leading-relaxed font-light">
+                        Na Ilumivitta Saúde Integrada, a consulta compartilhada é realizada de forma simultânea, com médica e nutricionista atendendo juntas, no mesmo momento.
+                    </p>
+                    <p class="text-gray-700 mb-8 leading-relaxed font-light">
+                        Essa dinâmica permite uma avaliação ampla e integrada desde o início, unindo olhar clínico, estratégia metabólica e planejamento nutricional em tempo real. As decisões são discutidas ali mesmo, de forma alinhada, garantindo que o protocolo seja coerente, personalizado e direcionado aos objetivos do paciente.
+                    </p>
+                    <p class="text-gray-700 mb-8 leading-relaxed font-light">
+                        O principal benefício é a otimização do tempo e da experiência: em uma única consulta, o paciente recebe avaliação médica, definição de condutas, ajustes nutricionais e planejamento completo, sem necessidade de agendamentos separados ou orientações fragmentadas.
+                    </p>
+                    <p class="text-gray-700 mb-8 leading-relaxed font-light">
+                        Os protocolos são construídos de forma integrada, podendo envolver estratégia alimentar, suplementação, manejo metabólico e, quando indicado, terapias específicas. Tudo é pensado de maneira personalizada, com acompanhamento contínuo e ajustes baseados na evolução clínica e na composição corporal.
+                    </p>
+                    <div class="bg-brand-bg p-8 rounded-[2.5rem] border border-brand-accent/20 mb-8">
+                        <p class="text-brand-ink font-light leading-relaxed">
+                            Mais do que uma consulta dupla, é um atendimento estratégico e coordenado, focado em eficiência, segurança e resultados consistentes.
+                        </p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <a href="https://wa.me/5585991458217" class="px-8 py-3 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-xs border border-brand-primary text-brand-primary hover:bg-brand-primary/5 w-full max-w-[280px] sm:w-auto">
+                            Marcar Consulta Compartilhada
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-8 fade-in">
+                    <div class="aspect-video overflow-hidden rounded-[3rem] border border-brand-accent/30 shadow-2xl">
+                        <img src="dois.jpeg" alt="Consulta Compartilhada" class="w-full h-full object-cover">
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-brand-bg rounded-[2rem] p-8 text-center border border-brand-accent/20 hover:border-brand-primary/40 transition-all group">
+                            <div class="mb-6 flex justify-center text-brand-primary opacity-60 group-hover:opacity-100 transition-opacity">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            </div>
+                            <h4 class="font-serif text-lg mb-2 text-brand-ink">Hormonal</h4>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400">Equilíbrio essencial</p>
+                        </div>
+                        <div class="bg-brand-bg rounded-[2rem] p-8 text-center border border-brand-accent/20 hover:border-brand-primary/40 transition-all group">
+                            <div class="mb-6 flex justify-center text-brand-primary opacity-60 group-hover:opacity-100 transition-opacity">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 2-2m-2-4 2-2m-2-4 2-2m-2-4 2-2"/><path d="M11 21a2 2 0 1 0 4 0 2 2 0 1 0-4 0Z"/><path d="M7 21h2"/><path d="M9 21h2"/><path d="M15 21h2"/><path d="M17 21h2"/><path d="M7 13h10"/><path d="M7 17h10"/><path d="M7 9h10"/><path d="M7 5h10"/></svg>
+                            </div>
+                            <h4 class="font-serif text-lg mb-2 text-brand-ink">Metabolismo</h4>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400">Performance real</p>
+                        </div>
+                        <div class="bg-brand-bg rounded-[2rem] p-8 text-center border border-brand-accent/20 hover:border-brand-primary/40 transition-all group">
+                            <div class="mb-6 flex justify-center text-brand-primary opacity-60 group-hover:opacity-100 transition-opacity">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.88-1.55 3.5-3.55 4.5-5.94 1.12-2.67 1.12-5.33 0-8-1-2.39-2.62-4.39-4.5-5.94-1.88 1.55-3.5 3.55-4.5 5.94-1.12 2.67-1.12 5.33 0 8 1 2.39 2.62 4.39 4.5 5.94Z"/><path d="M12 3v18"/><path d="M12 11h5"/><path d="M12 7h2"/><path d="M12 15h3"/></svg>
+                            </div>
+                            <h4 class="font-serif text-lg mb-2 text-brand-ink">Nutrição</h4>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400">Base sólida</p>
+                        </div>
+                        <div class="bg-brand-bg rounded-[2rem] p-8 text-center border border-brand-accent/20 hover:border-brand-primary/40 transition-all group">
+                            <div class="mb-6 flex justify-center text-brand-primary opacity-60 group-hover:opacity-100 transition-opacity">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M3 5h4"/><path d="M21 17v4"/><path d="M19 19h4"/></svg>
+                            </div>
+                            <h4 class="font-serif text-lg mb-2 text-brand-ink">Estética</h4>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400">Naturalidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especialidades -->
+        <section id="especialidades" class="py-16 md:py-20 px-6 md:px-12 lg:px-24 bg-brand-bg/20">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 md:text-center md:mb-16 fade-in">
+                    <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-4 block font-medium">Frentes de Atuação</span>
+                    <h2 class="text-3xl md:text-5xl font-normal leading-tight">Especialidades</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
+                    <div class="bg-white p-10 rounded-[2.5rem] border border-brand-accent/20 text-center fade-in">
+                        <h3 class="font-serif text-2xl mb-4 text-brand-ink">Medicina</h3>
+                        <p class="text-sm text-gray-600 font-light leading-relaxed">Check-ups e acompanhamento clínico focado em longevidade.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-[2.5rem] border border-brand-accent/20 text-center fade-in">
+                        <h3 class="font-serif text-2xl mb-4 text-brand-ink">Nutrição</h3>
+                        <p class="text-sm text-gray-600 font-light leading-relaxed">Estratégias personalizadas para recomposição corporal.</p>
+                    </div>
+                    <div class="bg-white p-10 rounded-[2.5rem] border border-brand-accent/20 text-center fade-in">
+                        <h3 class="font-serif text-2xl mb-4 text-brand-ink">Estética</h3>
+                        <p class="text-sm text-gray-600 font-light leading-relaxed">Procedimentos de alta tecnologia para face e corpo.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="https://wa.me/5585991458217" class="px-8 py-3 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-xs border border-brand-primary text-brand-primary hover:bg-brand-primary/5 w-full max-w-[280px] sm:w-auto">
+                        Ver Todas Especialidades
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Procedimentos -->
+        <section id="procedimentos" class="py-16 md:py-32 px-6 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 md:mb-24 fade-in">
+                    <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-4 block font-medium">Excelência Técnica</span>
+                    <h2 class="text-3xl md:text-5xl font-normal leading-tight">Procedimentos</h2>
+                </div>
+                <div class="space-y-16 md:space-y-32">
+                    <!-- Terapia -->
+                    <div class="border-b border-brand-accent/20 pb-24 fade-in">
+                        <h3 class="text-3xl md:text-4xl font-serif text-brand-primary mb-12">Terapia de Injetáveis</h3>
+                        <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
+                            <div class="aspect-video md:aspect-[4/5] overflow-hidden rounded-[2rem] border border-brand-accent/30">
+                                <img src="terapia.jpeg" alt="Terapia de Injetáveis" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-gray-700 font-light leading-relaxed text-lg italic mb-6">
+                                    As terapias injetáveis da Ilumivitta Saúde Integrada são protocolos estratégicos utilizados como complemento ao plano clínico e nutricional, sempre com indicação individualizada e baseada em evidência científica.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    Podem ser direcionadas para suporte metabólico, melhora de energia, otimização da composição corporal, reposição de nutrientes, fortalecimento imunológico e suporte à performance física. A via injetável permite melhor biodisponibilidade e absorção, especialmente em casos de deficiência nutricional, maior demanda metabólica ou necessidade de resposta mais rápida.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    Todos os protocolos são definidos após avaliação médica, respeitando exames laboratoriais, histórico clínico e objetivos do paciente. A aplicação é realizada com segurança, técnica adequada e acompanhamento contínuo, integrando-se ao plano global de tratamento.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-6">
+                                    O foco não é apenas suplementar, mas potencializar resultados com estratégia, precisão e responsabilidade médica.
+                                </p>
+                                <a href="https://wa.me/5585991458217" class="px-6 py-2 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-[10px] border border-brand-primary text-brand-primary hover:bg-brand-primary/5">
+                                    Agendar Injetáveis
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Harmonização -->
+                    <div class="border-b border-brand-accent/20 pb-24 fade-in">
+                        <h3 class="text-3xl md:text-4xl font-serif text-brand-primary mb-12">Harmonização Glútea</h3>
+                        <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
+                            <div class="aspect-video md:aspect-[4/5] overflow-hidden rounded-[2rem] border border-brand-accent/30">
+                                <img src="gluteon.jpeg" alt="Harmonização Glútea" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-gray-700 font-light leading-relaxed text-lg italic mb-6">
+                                    A harmonização glútea é um procedimento voltado para melhora do contorno, projeção e proporção dos glúteos, com foco em naturalidade e equilíbrio corporal.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    Na Ilumivitta Saúde Integrada, o planejamento é individualizado, considerando biotipo, composição corporal, qualidade de pele e expectativa da paciente. O objetivo não é apenas aumentar volume, mas melhorar formato, sustentação e harmonia com o restante do corpo.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    O protocolo pode envolver bioestimuladores de colágeno e outras técnicas indicadas conforme avaliação médica, promovendo melhora progressiva da firmeza, textura da pele e definição do contorno. A indicação é criteriosa, priorizando segurança, técnica adequada e acompanhamento pós-procedimento.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-6">
+                                    A harmonização glútea faz parte de um plano global de cuidado estético e corporal, podendo ser associada a estratégias de recomposição corporal e fortalecimento muscular, sempre com foco em resultados naturais, proporcionais e sustentáveis.
+                                </p>
+                                <a href="https://wa.me/5585991458217" class="px-6 py-2 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-[10px] border border-brand-primary text-brand-primary hover:bg-brand-primary/5">
+                                    Agendar Harmonização
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Endolaser -->
+                    <div class="border-b border-brand-accent/20 pb-24 fade-in">
+                        <h3 class="text-3xl md:text-4xl font-serif text-brand-primary mb-12">Endolaser</h3>
+                        <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
+                            <div class="aspect-video md:aspect-[4/5] overflow-hidden rounded-[2rem] border border-brand-accent/30">
+                                <img src="endolaser.jpeg" alt="Endolaser" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-gray-700 font-light leading-relaxed text-lg italic mb-6">
+                                    O Endolaser é um procedimento minimamente invasivo indicado para redução de gordura localizada e melhora da flacidez, promovendo remodelação corporal com estímulo de colágeno.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    A técnica utiliza fibra óptica introduzida sob a pele, por onde é emitida energia a laser que atua diretamente nas células de gordura e no tecido subcutâneo. Além de auxiliar na quebra da gordura localizada, o calor controlado estimula a retração da pele, favorecendo maior firmeza e melhor contorno da área tratada.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-6">
+                                    Na Ilumivitta Saúde Integrada, o planejamento é individualizado, considerando composição corporal, espessura da gordura, qualidade da pele e objetivos do paciente. O procedimento pode ser indicado para regiões como abdômen, flancos, culote, braços e papada, sempre após avaliação médica criteriosa.
+                                </p>
+                                <a href="https://wa.me/5585991458217" class="px-6 py-2 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-[10px] border border-brand-primary text-brand-primary hover:bg-brand-primary/5">
+                                    Agendar Endolaser
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Implantes -->
+                    <div class="border-b border-brand-accent/20 pb-24 fade-in">
+                        <h3 class="text-3xl md:text-4xl font-serif text-brand-primary mb-12">Implantes</h3>
+                        <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
+                            <div class="aspect-video md:aspect-[4/5] overflow-hidden rounded-[2rem] border border-brand-accent/30">
+                                <img src="implantes.jpeg" alt="Implantes" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-gray-700 font-light leading-relaxed text-lg italic mb-6">
+                                    Os implantes hormonais e não hormonais são recursos terapêuticos utilizados de forma estratégica e individualizada, sempre após avaliação clínica criteriosa e análise laboratorial.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    Os implantes hormonais podem ser indicados em situações específicas, como manejo de sintomas da menopausa, alterações hormonais diagnosticadas ou condições clínicas que se beneficiem de terapia de reposição, sempre com acompanhamento médico rigoroso, monitorização periódica e indicação baseada em critérios técnicos.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    Já os implantes não hormonais são utilizados com foco em performance, suporte metabólico e qualidade de vida, podendo atuar como coadjuvantes em protocolos de emagrecimento, recomposição corporal e melhora de energia, conforme perfil e necessidade do paciente.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-6">
+                                    Na Ilumivitta Saúde Integrada, a indicação é personalizada e faz parte de um plano global de cuidado, que integra estratégia clínica, nutricional e acompanhamento contínuo. O objetivo é promover equilíbrio, segurança e resultados sustentáveis, respeitando a individualidade biológica de cada paciente.
+                                </p>
+                                <a href="https://wa.me/5585991458217" class="px-6 py-2 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-[10px] border border-brand-primary text-brand-primary hover:bg-brand-primary/5">
+                                    Agendar Avaliação de Implantes
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calorimetria -->
+                    <div class="border-b border-brand-accent/20 pb-24 fade-in">
+                        <h3 class="text-3xl md:text-4xl font-serif text-brand-primary mb-12">Calorimetria e Bioimpedância</h3>
+                        <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
+                            <div class="aspect-video md:aspect-[4/5] overflow-hidden rounded-[2rem] border border-brand-accent/30">
+                                <img src="calorimetria.jpeg" alt="Calorimetria" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-gray-700 font-light leading-relaxed text-lg italic mb-6">
+                                    A calorimetria indireta e a bioimpedância são exames fundamentais para uma avaliação metabólica e corporal precisa, permitindo que o plano terapêutico seja construído com base em dados objetivos.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    A calorimetria indireta mede o gasto energético basal real do paciente, identificando quantas calorias o organismo consome em repouso. Isso possibilita prescrever estratégias nutricionais e metabólicas muito mais assertivas, evitando estimativas genéricas e favorecendo resultados mais eficientes no emagrecimento ou na recomposição corporal.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    Já a bioimpedância analisa a composição corporal, avaliando percentual de gordura, massa magra, massa muscular, água corporal e outros parâmetros importantes. Esse exame permite acompanhar a evolução de forma detalhada, diferenciando perda de gordura de perda de massa muscular.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-6">
+                                    Na Ilumivitta Saúde Integrada, ambos os exames são utilizados como ferramentas estratégicas dentro do acompanhamento personalizado, permitindo ajustes precisos no plano alimentar, nos protocolos metabólicos e nos treinos, sempre com foco em saúde, performance e resultados sustentáveis.
+                                </p>
+                                <a href="https://wa.me/5585991458217" class="px-6 py-2 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-[10px] border border-brand-primary text-brand-primary hover:bg-brand-primary/5">
+                                    Agendar Exames
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fisioterapia -->
+                    <div class="border-b border-brand-accent/20 pb-24 fade-in">
+                        <h3 class="text-3xl md:text-4xl font-serif text-brand-primary mb-12">Fisioterapia</h3>
+                        <div class="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
+                            <div class="aspect-video md:aspect-[4/5] overflow-hidden rounded-[2rem] border border-brand-accent/30">
+                                <img src="fisioterapia.jpeg" alt="Fisioterapia" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-gray-700 font-light leading-relaxed text-lg italic mb-6">
+                                    O serviço de Fisioterapia da Ilumivitta Saúde Integrada é voltado para o cuidado no pós-operatório, reabilitação estética e promoção de recuperação segura e eficiente.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    No pós-operatório, as fisioterapeutas atuam com protocolos específicos que incluem drenagem linfática manual, manejo de edema, prevenção e tratamento de fibroses, orientação de mobilidade e acompanhamento da cicatrização. O objetivo é acelerar a recuperação, reduzir desconfortos e potencializar os resultados cirúrgicos com segurança.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-4">
+                                    Na área estética, são realizados procedimentos como drenagens, terapias para melhora da textura da pele, redução de retenção de líquidos e protocolos complementares para remodelação corporal, sempre integrados ao planejamento médico e nutricional.
+                                </p>
+                                <p class="text-gray-700 font-light leading-relaxed mb-6">
+                                    O diferencial está na atuação integrada com a equipe da clínica, garantindo que cada paciente receba um acompanhamento personalizado, alinhado ao seu procedimento, fase de recuperação e objetivos estéticos, promovendo resultados mais harmônicos e consistentes.
+                                </p>
+                                <a href="https://wa.me/5585991458217" class="px-6 py-2 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-[10px] border border-brand-primary text-brand-primary hover:bg-brand-primary/5">
+                                    Agendar Fisioterapia
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proof Section -->
+        <section class="py-16 md:py-32 px-6 md:px-12 lg:px-24 bg-brand-bg/40">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 md:mb-24 fade-in">
+                    <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-4 block font-medium">Experiências</span>
+                    <h2 class="text-3xl md:text-5xl font-normal leading-tight">Resultados construídos<br class="hidden md:block" />com estratégia</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <!-- Testimonials -->
+                    <div class="bg-white p-10 rounded-[2.5rem] border border-brand-accent/20 flex flex-col justify-between hover:shadow-xl hover:shadow-brand-primary/5 transition-all duration-500 fade-in">
+                        <div>
+                            <div class="flex gap-1 text-brand-secondary/40 text-[10px] mb-6">★★★★★</div>
+                            <p class="text-gray-700 font-light italic leading-relaxed mb-8">"Atendimento diferenciado e extremamente humanizado. A consulta conjunta com médica e nutricionista faz toda a diferença: conduta alinhada e economia de tempo."</p>
+                        </div>
+                        <span class="text-[10px] tracking-widest uppercase font-bold text-brand-primary">— Carlos Rocha</span>
+                    </div>
+                    <div class="bg-white p-10 rounded-[2.5rem] border border-brand-accent/20 flex flex-col justify-between hover:shadow-xl hover:shadow-brand-primary/5 transition-all duration-500 fade-in">
+                        <div>
+                            <div class="flex gap-1 text-brand-secondary/40 text-[10px] mb-6">★★★★★</div>
+                            <p class="text-gray-700 font-light italic leading-relaxed mb-8">"Ótimo atendimento e profissionalismo de toda a equipe! Desde a recepção até a consulta, todos super atenciosos. Recomendo de olhos fechados!"</p>
+                        </div>
+                        <span class="text-[10px] tracking-widest uppercase font-bold text-brand-primary">— Matheus Sousa</span>
+                    </div>
+                    <div class="bg-white p-10 rounded-[2.5rem] border border-brand-accent/20 flex flex-col justify-between hover:shadow-xl hover:shadow-brand-primary/5 transition-all duration-500 fade-in">
+                        <div>
+                            <div class="flex gap-1 text-brand-secondary/40 text-[10px] mb-6">★★★★★</div>
+                            <p class="text-gray-700 font-light italic leading-relaxed mb-8">"Diferencial na minha vida foi iniciar o tratamento na IlumiVitta. Atendimento perfeito da recepção às Dras. Renara e Vladia. Equipe perfeita!"</p>
+                        </div>
+                        <span class="text-[10px] tracking-widest uppercase font-bold text-brand-primary">— Dr. NETO</span>
+                    </div>
+                    <div class="bg-white p-10 rounded-[2.5rem] border border-brand-accent/20 flex flex-col justify-between hover:shadow-xl hover:shadow-brand-primary/5 transition-all duration-500 fade-in">
+                        <div>
+                            <div class="flex gap-1 text-brand-secondary/40 text-[10px] mb-6">★★★★★</div>
+                            <p class="text-gray-700 font-light italic leading-relaxed mb-8">"Atendimento excelente. Profissionais altamente preparadas, me senti muito bem e consegui resultados reais."</p>
+                        </div>
+                        <span class="text-[10px] tracking-widest uppercase font-bold text-brand-primary">— Mikaelle Sousa</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Comparison -->
+        <section id="beneficios" class="py-16 md:py-32 px-6 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-32">
+                <div class="fade-in">
+                    <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-4 block font-medium">Comparativo</span>
+                    <h2 class="text-3xl md:text-5xl font-normal mb-8 md:mb-12 leading-tight">O que nos torna<br class="hidden md:block" />referência</h2>
+                    <div class="overflow-x-auto rounded-[2.5rem] border border-brand-accent/30">
+                        <table class="w-full text-left min-w-[500px] md:min-w-0">
+                            <thead>
+                                <tr class="bg-brand-bg/50">
+                                    <th class="p-8 text-[11px] uppercase tracking-widest font-semibold text-gray-400 border-b border-brand-accent/30">Diferencial</th>
+                                    <th class="p-8 text-[11px] uppercase tracking-widest font-bold text-brand-primary border-b border-brand-accent/30 bg-brand-primary/5">IlumiVitta</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-brand-accent/20">
+                                <tr class="hover:bg-brand-bg/30 transition-colors">
+                                    <td class="p-8 text-sm text-gray-700 font-light">Atendimento integrado</td>
+                                    <td class="p-8 text-sm text-brand-primary font-medium bg-brand-primary/5">Duo (Médica + Nutri)</td>
+                                </tr>
+                                <tr class="hover:bg-brand-bg/30 transition-colors">
+                                    <td class="p-8 text-sm text-gray-700 font-light">Planejamento</td>
+                                    <td class="p-8 text-sm text-brand-primary font-medium bg-brand-primary/5">100% Personalizado</td>
+                                </tr>
+                                <tr class="hover:bg-brand-bg/30 transition-colors">
+                                    <td class="p-8 text-sm text-gray-700 font-light">Acompanhamento</td>
+                                    <td class="p-8 text-sm text-brand-primary font-medium bg-brand-primary/5">Monitoramento Contínuo</td>
+                                </tr>
+                                <tr class="hover:bg-brand-bg/30 transition-colors">
+                                    <td class="p-8 text-sm text-gray-700 font-light">Foco</td>
+                                    <td class="p-8 text-sm text-brand-primary font-medium bg-brand-primary/5">Saúde + Estética</td>
+                                </tr>
+                                <tr class="hover:bg-brand-bg/30 transition-colors">
+                                    <td class="p-8 text-sm text-gray-700 font-light">Metodologia</td>
+                                    <td class="p-8 text-sm text-brand-primary font-medium bg-brand-primary/5">Baseada em Evidência</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="space-y-12 fade-in">
+                    <div>
+                        <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-4 block font-medium">Resultados</span>
+                        <h2 class="text-4xl lg:text-5xl font-normal mb-8 leading-tight">Equilíbrio para sua rotina</h2>
+                    </div>
+                    <div class="grid sm:grid-cols-1 gap-6">
+                        <div class="flex gap-8 group">
+                            <div class="w-10 h-10 rounded-full border border-brand-primary/20 flex items-center justify-center shrink-0 group-hover:bg-brand-primary group-hover:text-white transition-all duration-300">
+                                <span class="text-xs font-serif italic">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-brand-ink mb-1">Emagrecimento Estratégico</h4>
+                                <p class="text-sm text-gray-600 font-light">Focado em perda de gordura e manutenção de massa.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 group">
+                            <div class="w-10 h-10 rounded-full border border-brand-primary/20 flex items-center justify-center shrink-0 group-hover:bg-brand-primary group-hover:text-white transition-all duration-300">
+                                <span class="text-xs font-serif italic">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-brand-ink mb-1">Recomposição Corporal</h4>
+                                <p class="text-sm text-gray-600 font-light">Melhora da definição e tônus muscular.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 group">
+                            <div class="w-10 h-10 rounded-full border border-brand-primary/20 flex items-center justify-center shrink-0 group-hover:bg-brand-primary group-hover:text-white transition-all duration-300">
+                                <span class="text-xs font-serif italic">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-brand-ink mb-1">Longevidade & Performance</h4>
+                                <p class="text-sm text-gray-600 font-light">Mais disposição e energia para o dia a dia.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 group">
+                            <div class="w-10 h-10 rounded-full border border-brand-primary/20 flex items-center justify-center shrink-0 group-hover:bg-brand-primary group-hover:text-white transition-all duration-300">
+                                <span class="text-xs font-serif italic">4</span>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-brand-ink mb-1">Estética com Naturalidade</h4>
+                                <p class="text-sm text-gray-600 font-light">Procedimentos que respeitam sua identidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-10">
+                        <a href="#contato" class="px-8 py-4 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-xs bg-brand-primary text-white border border-brand-primary hover:bg-brand-primary/90 w-full max-w-[320px] sm:w-auto">
+                            Quero começar meu plano
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="bg-brand-bg/50 py-16 md:py-32 px-6 md:px-12 lg:px-24">
+            <div class="max-w-5xl mx-auto text-center mb-12 md:mb-24 fade-in">
+                <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-4 block font-medium">Jornada</span>
+                <h2 class="text-3xl md:text-5xl font-normal leading-tight">Sua transformação em<br class="hidden md:block" />3 etapas</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 text-center relative max-w-5xl mx-auto">
+                <div class="relative z-10 flex flex-col items-center fade-in">
+                    <div class="text-6xl font-serif italic text-brand-primary/10 absolute -top-10 left-1/2 -translate-x-1/2 select-none">01</div>
+                    <div class="w-12 h-12 rounded-full border border-brand-primary/20 flex items-center justify-center mb-8 bg-white shadow-sm text-brand-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 text-brand-ink">Agendamento</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">Nossa equipe prepara sua recepção de forma personalizada.</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center fade-in">
+                    <div class="text-6xl font-serif italic text-brand-primary/10 absolute -top-10 left-1/2 -translate-x-1/2 select-none">02</div>
+                    <div class="w-12 h-12 rounded-full border border-brand-primary/20 flex items-center justify-center mb-8 bg-white shadow-sm text-brand-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 text-brand-ink">Avaliação Duo</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">Médica e nutricionista analisam sua saúde em conjunto.</p>
+                </div>
+                <div class="relative z-10 flex flex-col items-center fade-in">
+                    <div class="text-6xl font-serif italic text-brand-primary/10 absolute -top-10 left-1/2 -translate-x-1/2 select-none">03</div>
+                    <div class="w-12 h-12 rounded-full border border-brand-primary/20 flex items-center justify-center mb-8 bg-white shadow-sm text-brand-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 text-brand-ink">Protocolo</h3>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">Você recebe um plano completo e acompanhamento contínuo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section id="equipe" class="py-16 md:py-32 px-6 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 md:mb-16 fade-in">
+                    <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-4 block font-medium">Nossa Equipe</span>
+                    <h2 class="text-3xl md:text-5xl font-normal leading-tight">Especialistas comprometidas com você</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12 text-center md:text-left">
+                    <div class="group p-10 rounded-[2.5rem] bg-brand-bg border border-gray-100 hover:border-brand-primary/20 transition-all duration-300 fade-in">
+                        <div class="w-24 h-24 rounded-full mb-8 flex items-center justify-center text-white text-3xl font-bold overflow-hidden bg-brand-primary mx-auto md:mx-0">
+                            <img src="vladi.jpeg" alt="Dra. Vladia Meneses" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Dra. Vladia Meneses</h3>
+                        <p class="text-brand-primary font-semibold mb-6 uppercase text-sm tracking-wider">Médica especialista em emagrecimento e saúde metabólica</p>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4">Dra. Vladia Meneses é médica com atuação focada em emagrecimento, performance metabólica, suplementação, hipertrofia e qualidade de vida. Possui pós-graduação em Nutrologia, Medicina do Esporte e em Obesidade e Emagrecimento pelo Hospital Israelita Albert Einstein, além de RQE em Medicina de Família, o que fortalece sua visão clínica ampla, individualizada e centrada no paciente.</p>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4">É cofundadora da Ilumivitta Saúde Integrada, onde desenvolve protocolos personalizados voltados para recomposição corporal, tratamento da obesidade, melhora da composição corporal e promoção de saúde metabólica, sempre com base em evidência científica, segurança e acompanhamento próximo.</p>
+                        <p class="text-gray-700 text-sm leading-relaxed">Sua abordagem integra estratégia clínica, mudança de estilo de vida, suplementação e terapias individualizadas, com foco em resultados sustentáveis e melhoria global da saúde. Também atua de forma ativa na educação em saúde, compartilhando conhecimento e orientando pacientes a conquistarem uma transformação consistente e duradoura.</p>
+                    </div>
+                    <div class="group p-10 rounded-[2.5rem] bg-brand-bg border border-gray-100 hover:border-brand-primary/20 transition-all duration-300 fade-in">
+                        <div class="w-24 h-24 rounded-full mb-8 flex items-center justify-center text-white text-3xl font-bold overflow-hidden bg-brand-secondary mx-auto md:mx-0">
+                            <img src="medica2.jpeg" alt="Renara Torquato" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Renara Torquato</h3>
+                        <p class="text-brand-primary font-semibold mb-6 uppercase text-sm tracking-wider">Nutricionista especialista em recomposição corporal</p>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4">Renara Torquato é nutricionista com atuação focada em emagrecimento, recomposição corporal, performance e mudança de estilo de vida. Desenvolve estratégias nutricionais personalizadas, respeitando a individualidade, a rotina e os objetivos de cada paciente, com foco em resultados consistentes e sustentáveis.</p>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-4">É cofundadora da Ilumivitta Saúde Integrada, onde atua de forma integrada à equipe médica, contribuindo para protocolos voltados ao tratamento da obesidade, ganho de massa muscular, melhora da composição corporal e saúde metabólica.</p>
+                        <p class="text-gray-700 text-sm leading-relaxed">Também é especialista em acompanhamento nutricional no pré e pós-operatório, oferecendo suporte estratégico para otimizar cicatrização, preservar massa magra, reduzir complicações e potencializar resultados cirúrgicos. Seu trabalho une ciência, escuta ativa e acompanhamento próximo, entendendo a nutrição como ferramenta de transformação, autonomia e construção de um estilo de vida equilibrado e duradouro.</p>
+                    </div>
+                </div>
+                <div class="mt-12 md:mt-16 text-center fade-in">
+                    <a href="https://wa.me/5585991458217" class="px-10 py-4 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-xs bg-brand-primary text-white border border-brand-primary hover:bg-white hover:text-brand-primary w-full max-w-[320px] sm:w-auto">
+                        Agendar com as Especialistas
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who is it for -->
+        <section class="bg-brand-bg/50 py-16 md:py-32 px-6 md:px-12 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 md:mb-16 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Para quem é a IlumiVitta</h2>
+                    <p class="text-gray-700">Identificamos os perfis que mais se beneficiam da nossa estratégia integrada.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 text-center">
+                    <div class="bg-white p-8 rounded-3xl border border-brand-accent/20 flex flex-col items-center shadow-sm fade-in">
+                        <div class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center mb-6 text-brand-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-4 text-gray-900">Mulheres buscando emagrecimento</h3>
+                        <p class="text-gray-700 italic">"Queria emagrecer sem radicalismo e finalmente encontrei acompanhamento completo."</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-brand-accent/20 flex flex-col items-center shadow-sm fade-in">
+                        <div class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center mb-6 text-brand-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-4 text-gray-900">Pacientes buscando autoestima</h3>
+                        <p class="text-gray-700 italic">"Me senti mais segura e confiante com resultados naturais."</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-brand-accent/20 flex flex-col items-center shadow-sm fade-in">
+                        <div class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center mb-6 text-brand-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-4 text-gray-900">Cansados de soluções temporárias</h3>
+                        <p class="text-gray-700 italic">"Foi a primeira vez que tive um plano realmente personalizado."</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-brand-accent/20 flex flex-col items-center shadow-sm fade-in">
+                        <div class="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center mb-6 text-brand-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-4 text-gray-900">Saúde e estética juntas</h3>
+                        <p class="text-gray-700 italic">"Não queria apenas estética. Queria cuidar da saúde como um todo."</p>
+                    </div>
+                </div>
+                <div class="mt-12 md:mt-16 text-center fade-in">
+                    <a href="https://wa.me/5585991458217" class="px-8 py-3 font-light transition-all duration-300 text-center inline-block tracking-widest uppercase text-xs border border-brand-primary text-brand-primary hover:bg-brand-primary/5 w-full max-w-[320px] sm:w-auto">
+                        Isso é para mim, quero agendar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-32 px-6 md:px-12 lg:px-24 bg-white">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center fade-in">Tem alguma dúvida?</h2>
+                <div class="space-y-2 fade-in">
+                    <div class="border-b border-gray-200 py-4 faq-item">
+                        <button class="flex justify-between items-center w-full text-left font-medium text-lg hover:text-brand-primary transition-colors faq-toggle">
+                            <span>A consulta compartilhada funciona como?</span>
+                            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div class="faq-content h-0 overflow-hidden transition-all duration-300">
+                            <p class="pt-4 text-gray-700 leading-relaxed">A médica e a nutricionista atendem juntas, permitindo uma avaliação integrada e estratégica desde o início, discutindo seu caso em tempo real.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200 py-4 faq-item">
+                        <button class="flex justify-between items-center w-full text-left font-medium text-lg hover:text-brand-primary transition-colors faq-toggle">
+                            <span>Os protocolos são personalizados?</span>
+                            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div class="faq-content h-0 overflow-hidden transition-all duration-300">
+                            <p class="pt-4 text-gray-700 leading-relaxed">Sim. Todo planejamento é individualizado conforme exames, objetivos, rotina e necessidades específicas de cada paciente.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200 py-4 faq-item">
+                        <button class="flex justify-between items-center w-full text-left font-medium text-lg hover:text-brand-primary transition-colors faq-toggle">
+                            <span>Os procedimentos têm aparência natural?</span>
+                            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div class="faq-content h-0 overflow-hidden transition-all duration-300">
+                            <p class="pt-4 text-gray-700 leading-relaxed">Sim. O pilar fundamental da IlumiVitta é o equilíbrio e a naturalidade, realçando sua própria beleza sem exageros.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200 py-4 faq-item">
+                        <button class="flex justify-between items-center w-full text-left font-medium text-lg hover:text-brand-primary transition-colors faq-toggle">
+                            <span>Preciso já ter exames?</span>
+                            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div class="faq-content h-0 overflow-hidden transition-all duration-300">
+                            <p class="pt-4 text-gray-700 leading-relaxed">Não necessariamente. Caso necessário, os exames complementares serão solicitados durante a sua primeira avaliação integrada.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200 py-4 faq-item">
+                        <button class="flex justify-between items-center w-full text-left font-medium text-lg hover:text-brand-primary transition-colors faq-toggle">
+                            <span>Quanto tempo dura a consulta?</span>
+                            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </button>
+                        <div class="faq-content h-0 overflow-hidden transition-all duration-300">
+                            <p class="pt-4 text-gray-700 leading-relaxed">O tempo pode variar, mas geralmente reservamos um tempo generoso para uma avaliação minuciosa e estratégica, superando as consultas convencionais em profundidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contato" class="bg-white py-16 md:py-32 px-6 border-t border-brand-accent/30">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 md:gap-24 items-start">
+                <div class="fade-in">
+                    <span class="text-[10px] tracking-[0.2em] text-brand-primary uppercase mb-6 block font-medium">Fale Conosco</span>
+                    <h2 class="text-3xl md:text-6xl font-normal mb-8 md:mb-12 leading-tight font-serif text-brand-ink text-center md:text-left">Comece sua nova<br class="hidden md:block" />história hoje</h2>
+                    <div class="space-y-8 md:space-y-10">
+                        <div class="flex items-start gap-6">
+                            <div class="w-10 h-10 rounded-full bg-brand-bg flex items-center justify-center shrink-0 border border-brand-accent/30">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-primary"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-brand-ink mb-2 uppercase tracking-widest">Endereço</p>
+                                <p class="text-gray-700 leading-relaxed font-light text-sm">
+                                    Edifício Uno Medical e Office<br />
+                                    Av. Pontes Vieira, 2340 – 7° andar sala 711<br />
+                                    Dionísio Torres, Fortaleza – CE
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <div class="w-10 h-10 rounded-full bg-brand-bg flex items-center justify-center shrink-0 border border-brand-accent/30">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-primary"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-brand-ink mb-2 uppercase tracking-widest">WhatsApp / E-mail</p>
+                                <a href="https://wa.me/5585991458217" class="text-gray-700 hover:text-brand-primary transition-colors font-light text-sm block mb-1">(85) 99145-8217</a>
+                                <a href="mailto:contatoilumivitta@gmail.com" class="text-gray-700 hover:text-brand-primary transition-colors font-light text-sm block">contatoilumivitta@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6">
+                            <div class="w-10 h-10 rounded-full bg-brand-bg flex items-center justify-center shrink-0 border border-brand-accent/30">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-primary"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-brand-ink mb-2 uppercase tracking-widest">Siga-nos</p>
+                                <div class="flex flex-col gap-1">
+                                    <a href="https://instagram.com/clinicailumivitta" class="text-gray-700 hover:text-brand-primary transition-colors font-light text-sm">@clinicailumivitta</a>
+                                    <a href="https://instagram.com/dravladiameneses" class="text-gray-700 hover:text-brand-primary transition-colors font-light text-sm">@dravladiameneses</a>
+                                    <a href="https://instagram.com/renaratorquatonutri" class="text-gray-700 hover:text-brand-primary transition-colors font-light text-sm">@renaratorquatonutri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-brand-bg p-12 rounded-[3.5rem] border border-brand-accent/30 fade-in">
+                    <h3 class="text-2xl font-serif italic text-brand-primary mb-8 underline underline-offset-8 decoration-brand-accent/50">Cuidado Integral</h3>
+                    <p class="text-gray-700 font-light text-lg mb-12 leading-relaxed">
+                        Pautado pela ética médica e evidência científica. Cada protocolo é revisado por nossa dupla de especialistas para garantir o máximo de segurança.
+                    </p>
+                    <a href="https://wa.me/5585991458217" class="w-full py-5 text-sm bg-brand-primary text-white text-center block rounded-xl font-bold hover:bg-brand-primary/90 transition-all uppercase tracking-widest">Agendar via WhatsApp</a>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto mt-32 pt-12 border-t border-brand-accent/20 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] tracking-widest uppercase font-medium text-gray-400">
+                <div class="flex items-center gap-2">
+                    <span class="text-brand-primary">ILUMI</span>
+                    <span class="text-brand-secondary">VITTA</span>
+                </div>
+                <p>© 2024 IlumiVitta Saúde Integrada</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

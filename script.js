@@ -5,11 +5,11 @@ const mobileMenu = document.getElementById('mobile-menu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 
 function toggleMenu() {
-    mobileMenu.classList.toggle('-translate-y-full');
+    if (mobileMenu) mobileMenu.classList.toggle('-translate-y-full');
 }
 
-mobileMenuBtn.addEventListener('click', toggleMenu);
-closeMenuBtn.addEventListener('click', toggleMenu);
+if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleMenu);
+if (closeMenuBtn) closeMenuBtn.addEventListener('click', toggleMenu);
 mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
 
 // FAQ Toggle Logic
